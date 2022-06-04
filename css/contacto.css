@@ -1,10 +1,14 @@
 * {
     font-family: 'Open Sans', sans-serif;
-    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .header{
    
+    margin: 0px;
+    padding: 0px;
     display: flex;
     background-image: url(/assets/img/img.jpg) ;
     background-size: cover;
@@ -36,10 +40,12 @@
     font-size: 20px;
     
 }
+
 .header__nav--a {
 
     color: #FFFFFF;
     text-decoration: none;
+
 }
 
 .main{
@@ -48,15 +54,42 @@
     
 }
 
+.container{
 
-.form{
-
+    display: flex;
     background-color: #9D12AB;
 
 }
 
 
-.form__iframe{
+.form{
+
+    width: 300px;
+
+}
+
+.form__div{
+
+    padding: 7px 0px;
+    margin: 5px;
+
+}
+
+.form__input{
+
+    width: 100%;
+
+
+}
+
+.form__textarea{
+
+    min-height: 130px;
+    resize: none;
+
+}
+
+.iframe{
 
 }
 
