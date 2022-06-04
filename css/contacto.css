@@ -17,7 +17,7 @@
 }
 .header__logo {
 
-    width: 10%;
+    width: 7%;
     border-radius: 100px;
     
 }
@@ -48,19 +48,12 @@
 
 }
 
-.main{
-
-    
-    
-}
-
 .container{
 
     display: flex;
     background-color: #9D12AB;
 
 }
-
 
 .form{
 
@@ -78,18 +71,24 @@
 .form__input{
 
     width: 100%;
-
-
+    
 }
+
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
 
 .form__textarea{
 
     min-height: 130px;
     resize: none;
-
+    width: 100%;
 }
 
 .iframe{
+
+    width: 100%;
 
 }
 
