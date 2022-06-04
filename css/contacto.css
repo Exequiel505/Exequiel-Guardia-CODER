@@ -1,6 +1,5 @@
 * {
     font-family: 'Open Sans', sans-serif;
-   
     
 }
 
@@ -41,6 +40,24 @@
 
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.main{
+
+    
+    
+}
+
+
+.form{
+
+    background-color: #9D12AB;
+
+}
+
+
+.form__iframe{
+
 }
 
 
