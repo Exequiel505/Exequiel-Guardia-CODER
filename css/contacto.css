@@ -1,0 +1,54 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header__logo {
+
+    width: 10%;
+    border-radius: 200px;
+}
+
+.header__nav{
+
+    display: inline-block;
+    width: 100%;
+
+}
+
+.header__nav__ul{
+
+    display: inline;
+   
+}
+
+.header__nav--li{
+
+    display: inline-block;
+    list-style: none;
+    padding: 1%;
+    text-align: center;
+    float: left;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+}
