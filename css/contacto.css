@@ -7,8 +7,6 @@
 
 .header{
    
-    margin: 0px;
-    padding: 0px;
     display: flex;
     background-image: url(/assets/img/img.jpg) ;
     background-size: cover;
