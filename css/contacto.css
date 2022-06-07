@@ -39,13 +39,15 @@
 
 }
 
+/* Css de tratamientos */
 
+.imgPrp, .imgPreso, .imgMela{
 
+    height: 28%;
+    width: 28%;
+    margin: 3% 2%;
 
-
-
-
-
+}
 
 /* Css de contacto */
 
