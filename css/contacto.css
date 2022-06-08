@@ -2,24 +2,34 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+h1{
+
+    text-align: center;
+    
+}
+
 .header{
    
     display: flex;
     background-image: url(/assets/img/img.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #000;
     
 }
 .header__logo {
 
     width: 7%;
     border-radius: 100px;
+    flex-basis: 100px;
+    margin: .2%;
     
 }
 
 .header__nav{
-   
-    width: 60%;
+
+    width: 100%;
+    text-align: center;
 
 }
 
@@ -28,7 +38,7 @@
     display: inline-block;
     list-style: none;
     padding: 2%;
-    font-size: 20px;
+    font-size: 28px;
     
 }
 
@@ -41,6 +51,21 @@
 
 /* Css de tratamientos */
 
+.div__prp{
+
+    display: flex;
+
+}
+
+.p__prp{
+
+    font-size: 2.2em;
+    align-items: flex-end;
+
+}
+
+
+
 .imgPrp, .imgPreso, .imgMela{
 
     height: 28%;
@@ -50,6 +75,17 @@
 }
 
 /* Css de sobreNosotros */
+
+.nosotros{
+
+    display: flex;
+}
+
+.nosotros__p{
+
+    font-size: 2em;
+
+}
 
 .imgDoctor{
 
