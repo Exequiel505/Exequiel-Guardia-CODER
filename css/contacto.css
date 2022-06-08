@@ -5,7 +5,7 @@
 h1{
 
     text-align: center;
-    
+
 }
 
 .header{
@@ -50,7 +50,13 @@ h1{
 }
 
 /* Css de tratamientos */
+/*
+.tratamientos__h2{
 
+    padding: 0px 10%;
+
+}
+*/
 .div__prp{
 
     display: flex;
