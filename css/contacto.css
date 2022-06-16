@@ -33,6 +33,7 @@ h1{
 .header{
    
     display: flex;
+    justify-content: space-between;
     background-image: url(/assets/img/img.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,23 +140,19 @@ h1{
 
 }
 
+.grid__nosotros h2{
+
+    font-size: 40px;
+    grid-column: 1 / span 2;
+
+}
+
 .grid__nosotros p{
 
     font-size: 30px;
 
 }
 
-.grid__nosotros h2{
-
-    font-size: 40px;
-
-}
-
-.grid__nosotros h2{
-
-    grid-column: 1 / span 2;
-
-}
 
 
 
