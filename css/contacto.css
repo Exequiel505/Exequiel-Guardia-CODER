@@ -3,9 +3,6 @@
     font-weight: 1000;
 }
 
-
-
-
 h1{
 
     text-align: center;
@@ -53,15 +50,13 @@ h1{
 
 }
 
-
-
-
 /* Css de index */
 
 .index__grid{
     display: grid;
-    grid-template-columns: 1fr 150px;
-    grid-template-rows: 250px 1fr 50px;
+    height: 100vh;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 150px 1fr 50px;
     grid-template-areas:"nav            nav"
                         "main__index    publicidad" 
                         "footer         footer";  
