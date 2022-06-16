@@ -9,7 +9,6 @@ h1{
 
 }
 
-
 .nav{
 
     display: flex;
@@ -65,7 +64,6 @@ h1{
 .nav{
 
     grid-area: nav;
-    background-color: ;
 
 }
 
@@ -102,13 +100,6 @@ h1{
 
 }
 
-
-
-
-
-
-
-
 /* Css de tratamientos */
 /*
 .tratamientos__h2{
@@ -130,8 +121,6 @@ h1{
 
 }
 
-
-
 .imgPrp, .imgPreso, .imgMela{
 
     height: 28%;
@@ -140,61 +129,40 @@ h1{
 
 }
 
-/* Css de sobreNosotros 
+/* Css de sobreNosotros */
 
+.nos__grid {
 
-.nosotros{
-
-    display: flex;
-}
-
-.nosotros__p{
-
-    font-size: 2em;
-
-}
-
-.imgDoctor{
-
-    margin: 3% .5%;
-
-}
-*/
-
-.grid__nosotros{
-
+    height: 100vh;
     display: grid;
-    grid-template-columns: ;
-    margin: 2%;
-    grid-column-gap: 70px;
-    grid-row-gap: 50px;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 150px 1fr 150px;
+    grid-template-areas:"nav            nav"        
+                        "main__nos      main__nos"  
+                        "footer__nos    footer__nos";
 
 }
 
-.grid__nosotros h2{
+.nav{
 
-    font-size: 40px;
-    grid-column: 1 / span 2;
-
-}
-
-.grid__nosotros p{
-
-    font-size: 30px;
+    grid-area: nav;
 
 }
 
 
+.main__nos{
 
+    grid-area: main__nos;
+    background-color: aqua;
 
+}
 
+.footer__nos{
 
+    grid-area: footer__nos;
+    background-color: darkred;
 
-
-
-
-
-
+}
 
 
 
