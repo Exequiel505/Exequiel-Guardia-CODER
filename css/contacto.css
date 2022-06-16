@@ -59,7 +59,7 @@ h1{
 */
 .div__prp{
 
-    display: flex;
+    display: grid;
 
 }
 
@@ -80,7 +80,8 @@ h1{
 
 }
 
-/* Css de sobreNosotros */
+/* Css de sobreNosotros 
+
 
 .nosotros{
 
@@ -98,6 +99,55 @@ h1{
     margin: 3% .5%;
 
 }
+*/
+
+.grid__nosotros{
+
+    display: grid;
+    
+    margin: 1%;
+
+}
+
+.grid__nosotros__item{
+
+    margin: 1%;
+
+}
+
+.grid__nosotros h2{
+
+    grid-column: 1 / span 2;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Css de contacto */
 
