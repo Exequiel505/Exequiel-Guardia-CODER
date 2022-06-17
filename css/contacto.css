@@ -157,12 +157,35 @@ h1{
 
 }
 
+.flex__nos{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex__nos__item{
+
+    margin: 30px;
+    display: flex;
+
+}
+
+.flex__nos p{
+
+    font-size: 26px;
+
+
+}
+
 .footer__nos{
 
     grid-area: footer__nos;
     background-color: darkred;
 
 }
+
+
 
 
 
