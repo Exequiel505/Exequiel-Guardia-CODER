@@ -157,11 +157,6 @@ h1{
                             "footer         footer";  
     }
     
-    .nav{
-    
-        grid-area: nav;
-    
-    }
 
     .logo{
 
@@ -330,15 +325,9 @@ h1{
 
 @media screen and (min-width: 1200px ) {
     
-    .nav{
-    
-        grid-area: nav;
-    
-    }
     
     .main__nos {
     
-        grid-area: main__nos;
         background-color: aqua;
     
     }
@@ -387,16 +376,11 @@ h1{
     
     .footer__nos{
     
-        grid-area: footer__nos;
         background-color: darkred;
     
     }
     
 }
-
-
-
-
 
 
 /* Css de contacto */
