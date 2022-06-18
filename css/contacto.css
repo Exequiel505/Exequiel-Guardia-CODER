@@ -15,14 +15,17 @@ h1{
     background-color: #000;
     background-image: url(/assets/img/img.jpg);
     background-size: cover;
+    width: 100%;
 
 }
 
 .logo{
 
-    width: 250px;
-    margin: 15px;
+    width: 70px;
+    padding: 8px;
     display: flex;
+    border-radius: 50px;
+    overflow: hidden;
 
 }
 
@@ -37,8 +40,8 @@ h1{
 .nav ul li{
 
     text-decoration: none;
-    padding: 16px;
-    font-size: 30px;
+    padding: 8px;
+    font-size: 20px;
 
 }
 
@@ -51,54 +54,168 @@ h1{
 
 /* Css de index */
 
-.index__grid{
+.index__grid {
+
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 250px;
-    grid-template-rows: 150px 1fr 50px;
+    grid-template-rows: 150px 1fr 1fr 50px;
     grid-template-areas:"nav            nav"
-                        "main__index    publicidad" 
-                        "footer         footer";  
+                        "main__index    main__index" 
+                        "publicidad     publicidad"
+                        "footer         footer"; 
+
 }
 
 .nav{
 
     grid-area: nav;
+    width: 100%;
 
 }
 
 .main__index{
 
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     grid-area: main__index;
-    background-color: darkgreen;
-    font-size: 24px;
+    background-color: aqua;
+    padding: 10px;
 
 }
 
 .main__index iframe{
 
-    margin: 40px;
+    width: 100%;
+   padding: 10px;
 
 }
 
 .publicidad__index{
 
     grid-area: publicidad;
-    background-color: blueviolet;
+    background-color: #9D12AB;
+    padding: 10px;
 
 }
 
 .footer__index{
 
     grid-area: footer;
-    background-color: crimson;
+    background-color: #000;
+    padding: 10px;
 
 }
+
+@media screen and ( min-width: 768px) {
+
+    .logo{
+
+        width: 120px;
+        display: flex;
+        border-radius: 50px;
+        overflow: hidden;
+    
+    }
+    
+    .nav ul li{
+    
+        text-decoration: none;
+        padding: 8px;
+        font-size: 24px;
+    
+    }
+       
+}
+
+@media screen and (min-width: 992px ) {
+
+    .logo{
+
+        width: 150px;
+        display: flex;
+        border-radius: 20px;
+        overflow: none;
+    
+    }
+    
+    .nav ul li{
+    
+        text-decoration: none;
+        padding: 20px;
+        font-size: 26px;
+    
+    }
+    
+}
+
+@media screen and ( min-width: 1200px ) {
+
+    .index__grid {
+    
+        grid-template-rows: 150px 1fr 50px;
+        grid-template-areas:"nav            nav"
+                            "main__index    publicidad" 
+                            "footer         footer";  
+    }
+    
+    .nav{
+    
+        grid-area: nav;
+    
+    }
+
+    .logo{
+
+        width: 150px;
+        padding: 16px;
+        display: flex;
+        border-radius: 50px
+        overflow: hidden;
+    
+    }
+    
+    .nav ul li{
+    
+        text-decoration: none;
+        padding: 30px;
+        font-size: 26px;
+    
+    }
+    
+    .main__index{
+    
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        grid-area: main__index;
+        background-color: darkgreen;
+        font-size: 24px;
+    
+    }
+    
+    .main__index iframe{
+    
+        padding: 25px;
+    
+    }
+    
+    .publicidad__index{
+    
+        grid-area: publicidad;
+        background-color: blueviolet;
+    
+    }
+    
+    .footer__index{
+    
+        grid-area: footer;
+        background-color: crimson;
+    
+    }  
+    
+}
+
 
 /* Css de tratamientos */
 /*
@@ -149,7 +266,6 @@ h1{
 
 }
 
-
 .main__nos {
 
     grid-area: main__nos;
@@ -182,7 +298,7 @@ h1{
 
     font-size: 35px;
     margin-left: 75px;
-
+    
 }
 
 .flex__nos p{
