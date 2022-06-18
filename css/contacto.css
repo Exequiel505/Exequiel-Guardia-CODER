@@ -62,7 +62,7 @@ h1{
     grid-template-rows: 150px 1fr 1fr 50px;
     grid-template-areas:"nav            nav"
                         "main__index    main__index" 
-                        "publicidad    publicidad"
+                        "publicidad     publicidad"
                         "footer         footer"; 
 
 }
@@ -128,6 +128,7 @@ h1{
 
 .main__grid{
 
+    height: 100vh;
     grid-area: main__grid;
     background-color: #9D12AB;
 
@@ -137,7 +138,17 @@ h1{
 
     display: flex;
     flex-wrap: wrap;
+    padding: 5px;
+    margin: 15px;
 
+}
+
+.trat__div{
+
+    display: flex;
+    margin: 14px;
+     
+   
 }
 
 .trat img{
@@ -152,8 +163,6 @@ h1{
     background-color: #000;
 
 }
-
-
 
 /* CSS SOBRE NOSOTROS */
 
@@ -226,7 +235,6 @@ h1{
 
 }
 
-
 /* CSS DE CONTACTO */
 
 .container{
@@ -273,7 +281,6 @@ input::-webkit-outer-spin-button,
     height: 53vh;
 
 }
-
 
 /* MEDIA INDEX */
 
