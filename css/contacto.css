@@ -14,7 +14,6 @@ h1{
 .nav{
 
     display: flex;
-    justify-content: space-between;
     background-color: #000;
     background-image: url(/assets/img/img.jpg);
     background-size: cover;
@@ -25,7 +24,7 @@ h1{
 .logo{
 
     width: 70px;
-    padding: 8px;
+    padding: px;
     display: flex;
     border-radius: 50px;
     overflow: hidden;
@@ -43,8 +42,8 @@ h1{
 .nav ul li{
 
     text-decoration: none;
-    padding: 8px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 10px;
 
 }
 
