@@ -24,9 +24,9 @@ h1{
 .logo{
 
     width: 70px;
-    padding: px;
+    padding: 5px;
     display: flex;
-    border-radius: 50px;
+    border-radius: 1000px;
     overflow: hidden;
 
 }
@@ -347,7 +347,7 @@ input::-webkit-outer-spin-button,
 
     .index__grid {
      
-        grid-template-rows: 15% 1fr 5%;
+        grid-template-rows: 0.5fr 3.5fr 0.1fr;
         grid-template-areas:"nav            nav"
                             "main__index    publicidad" 
                             "footer         footer";  
