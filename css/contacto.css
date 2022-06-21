@@ -1,6 +1,8 @@
-* {
+* html {
+
     font-family: 'Open Sans', sans-serif;
     font-weight: 1000;
+
 }
 
 h1{
@@ -55,12 +57,15 @@ h1{
 
 /* CSS INDEX */
 
+
+
 .index__grid {
 
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 250px;
-    grid-template-rows: 150px 1fr 1fr 50px;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 15%;
+    grid-template-rows: 5% 6fr 1fr 2%;
     grid-template-areas:"nav            nav"
                         "main__index    main__index" 
                         "publicidad     publicidad"
@@ -330,13 +335,12 @@ input::-webkit-outer-spin-button,
 @media screen and ( min-width: 1200px ) {
 
     .index__grid {
-    
-        grid-template-rows: 150px 1fr 50px;
+     
+        grid-template-rows: 15% 1fr 5%;
         grid-template-areas:"nav            nav"
                             "main__index    publicidad" 
                             "footer         footer";  
     }
-    
 
     .logo{
 
@@ -344,7 +348,6 @@ input::-webkit-outer-spin-button,
         padding: 16px;
         display: flex;
         border-radius: 50px
-        overflow: hidden;
     
     }
     
