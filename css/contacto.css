@@ -2,7 +2,23 @@
 
     font-family: 'Open Sans', sans-serif;
     font-weight: 1000;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
 
 }
 
+.cuerpo__index{
+
+    min-height: 100vh;
+    padding: 0;
+
+}
+
+.pie{
+
+    align-content: end;
+    display: flex;
+    margin-bottom: auto;
+    background-color: aqua;
+
+}
