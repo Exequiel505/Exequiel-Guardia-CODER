@@ -173,10 +173,11 @@ h1{
 
 .nos__grid {
 
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: .5fr 1fr .1fr;
+    grid-template-rows: .1fr 3fr .1fr;
     grid-template-areas:"nav            nav"        
                         "main__nos      main__nos"  
                         "footer__nos    footer__nos";
@@ -190,7 +191,7 @@ h1{
 }
 
 .main__nos {
-    
+
     grid-area: main__nos;
     background-color: aqua;
 
@@ -427,7 +428,14 @@ input::-webkit-outer-spin-button,
 }
 
 @media screen and (min-width: 1200px ) {
-    
+
+    .nos__grid {
+
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: .1fr 3fr .1fr;
+  
+
+}
     
     .main__nos {
     
