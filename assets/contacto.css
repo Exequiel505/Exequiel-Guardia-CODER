@@ -65,7 +65,7 @@ h1{
     min-height: 100vh;
     min-width: 100vw;
     grid-template-columns: 1fr 15%;
-    grid-template-rows: 0.5fr 5fr .5fr .1fr;
+    grid-template-rows: 0.1fr 5fr 1fr .1fr;
     grid-template-areas:"nav            nav"
                         "main__index    main__index" 
                         "publicidad     publicidad"
@@ -432,7 +432,7 @@ input::-webkit-outer-spin-button,
     .nos__grid {
 
     grid-template-columns: 300px 1fr;
-    grid-template-rows: .1fr 3fr .1fr;
+    grid-template-rows: 0.1fr 3fr .1fr;
   
 
 }
