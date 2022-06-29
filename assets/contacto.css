@@ -14,6 +14,7 @@ h1{
 .nav{
 
     display: flex;
+    justify-content: space-between;
     background-color: #000;
     background-image: url(./img.jpg);
     background-size: cover;
@@ -23,10 +24,10 @@ h1{
 
 .logo{
 
-    width: 70px;
+    width: 35px;
     padding: 5px;
     display: flex;
-    border-radius: 1000px;
+    border-radius: 34px;
     overflow: hidden;
 
 }
@@ -64,7 +65,7 @@ h1{
     height: 100%;
     width: 100%;
     grid-template-columns: 1fr 15%;
-    grid-template-rows: 5% 6fr .5fr .1fr;
+    grid-template-rows: 0.5fr 6fr .5fr .1fr;
     grid-template-areas:"nav            nav"
                         "main__index    main__index" 
                         "publicidad     publicidad"
