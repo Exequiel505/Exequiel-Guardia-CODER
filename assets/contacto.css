@@ -59,15 +59,13 @@ h1{
 
 /* CSS INDEX */
 
-
-
 .index__grid {
 
     display: grid;
-    min-height: 100%;
+    min-height: 100vh;
     min-width: 100%;
     grid-template-columns: 1fr 15%;
-    grid-template-rows: 0.5fr 6fr .5fr .1fr;
+    grid-template-rows: 0.5fr 5fr .5fr .1fr;
     grid-template-areas:"nav            nav"
                         "main__index    main__index" 
                         "publicidad     publicidad"
@@ -300,6 +298,12 @@ input::-webkit-outer-spin-button,
 
 @media screen and ( min-width: 768px) {
 
+    .index__grid {
+
+        grid-template-rows: 0.5fr 7fr .5fr .1fr;
+        
+    }
+
     .logo{
 
         width: 120px;
@@ -388,7 +392,7 @@ input::-webkit-outer-spin-button,
     
     .main__index iframe{
     
-        width: 75%;
+        width: 65%;
         padding: 25px;
     
     }
