@@ -18,7 +18,7 @@ h1{
     display: flex;
     justify-content: space-between;
     background-color: #000;
-    background-image: url(./img.jpg);
+    background-image: url(../img.jpg);
     background-size: cover;
     min-width: 100vw;
 
