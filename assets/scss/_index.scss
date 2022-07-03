@@ -1,0 +1,51 @@
+.index__grid {
+
+    display: grid;
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-template-columns: 1fr 15%;
+    grid-template-rows: .1fr 5fr 1fr .1fr;
+    grid-template-areas:"nav            nav"
+                        "main__index    main__index" 
+                        "publicidad     publicidad"
+                        "footer         footer"; 
+
+}
+
+.nav{
+
+    grid-area: nav;
+    width: 100%;
+
+}
+
+.main__index{
+
+    grid-area: main__index;
+    background-color: $color__aqua;
+    padding: 10px;
+
+        iframe{
+
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+    
+        }
+
+}
+
+.publicidad__index{
+
+    grid-area: publicidad;
+    background-color: $color__publi;
+    padding: 10px;
+
+}
+
+.footer__index{
+
+    grid-area: footer;
+    background-color: $color__footer;
+
+}
