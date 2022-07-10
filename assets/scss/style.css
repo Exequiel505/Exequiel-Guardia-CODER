@@ -1,8 +1,8 @@
 * html {
   font-family: "Open Sans", sans-serif;
   font-weight: 1000;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
   background-color: #000;
   background-image: url(../img.jpg);
   background-size: cover;
-  min-width: 100vw;
+  width: 100vw;
 }
 .nav ul {
   list-style: none;
@@ -82,7 +82,7 @@ h1 {
   background-color: #04f804;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .index__grid {
     grid-template-rows: 0.5fr 7fr 0.5fr 0.1fr;
   }
@@ -161,4 +161,33 @@ h1 {
     grid-area: footer;
     background-color: #04f804;
   }
+}
+.container {
+  display: flex;
+  background-color: #9D12AB;
+}
+.container .form {
+  width: 300px;
+}
+.container .form .formdiv {
+  padding: 7px 0px;
+  margin: 5px;
+}
+.container .form .formdiv .forminput {
+  width: 100%;
+}
+.container .form .formdiv .form__textarea {
+  min-height: 130px;
+  resize: none;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.iframe {
+  width: 100%;
+  height: 53vh;
 }/*# sourceMappingURL=style.css.map */

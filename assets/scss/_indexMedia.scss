@@ -1,38 +1,54 @@
 
-@media screen and ( min-width: 768px) {
+$breakpoints: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
-    .index__grid {
+@mixin breakpoint($size) {
 
-        grid-template-rows: 0.5fr 7fr .5fr .1fr;
-        
+    @if map-has-key($breakpoints, $size) {
+
+      @media (min-width: #{map-get($breakpoints, $size)}) {
+
+        @content;
+          }
+      }
     }
+@include breakpoint(md){.index__grid {
 
-    .logo{
-
-        width: 120px;
-        display: flex;
-        border-radius: 50px;
-        overflow: hidden;
+    grid-template-rows: 0.5fr 7fr .5fr .1fr;
     
-    }
-    
-    .nav ul li{
-    
-        text-decoration: none;
-        padding: 8px;
-        font-size: 24px;
-    
-    }
-
-    .main__index iframe{
-
-        height: 500px;
-    
-    }
-       
 }
 
-@media screen and (min-width: 992px ) {
+.logo{
+
+    width: 120px;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+.nav ul li{
+
+    text-decoration: none;
+    padding: 8px;
+    font-size: 24px;
+
+}
+
+.main__index iframe{
+
+    height: 500px;
+
+}
+
+}
+
+@include(lg){
 
     .logo{
 
@@ -56,9 +72,10 @@
             }
     
         }
-}        
 
-@media screen and ( min-width: 1200px ) {
+}      
+
+@include(xl){
 
     .index__grid {
      
@@ -124,5 +141,5 @@
         grid-area: footer;
         background-color: $color__footer;
     
-    }     
+    } 
 }

@@ -257,20 +257,20 @@ img:nth-child(1){
 
 }
 
-.form{
+.container .form{
 
     width: 300px;
 
 }
 
-.form__div{
+.container .form .form__div{
 
     padding: 7px 0px;
     margin: 5px;
 
 }
 
-.form__input{
+.container .form .form__div .form__input{
 
     width: 100%;
     
@@ -281,7 +281,7 @@ input::-webkit-outer-spin-button,
       -webkit-appearance: none;
   }
 
-.form__textarea{
+  .container .form .form__div .form__textarea{
 
     min-height: 130px;
     resize: none;

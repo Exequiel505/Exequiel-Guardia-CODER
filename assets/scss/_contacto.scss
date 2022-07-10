@@ -1,0 +1,45 @@
+.container {
+
+    display: flex ;
+    background-color: #9D12AB ;
+
+    .form {
+
+        width: 300px ;
+
+        .formdiv {
+
+            padding: 7px 0px ;
+            margin: 5px ;
+
+            .forminput {
+
+                width: 100% ;
+
+            }
+
+            .form__textarea {
+
+                min-height: 130px ;
+                resize: none ;
+                width: 100% ;
+
+            }
+
+         }
+     }
+}
+
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
+
+
+
+.iframe{
+
+    width: 100%;
+    height: 53vh;
+
+}
