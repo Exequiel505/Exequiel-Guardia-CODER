@@ -1,33 +1,31 @@
-.container {
 
-    display: flex ;
+.container {
+    width: 100%;
+    
     background-color: #9D12AB ;
 
     .form {
 
-        width: 300px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100% ;
+        padding: 2em;
+        
 
-        .formdiv {
+            .form__input {
 
-            padding: 7px 0px ;
-            margin: 5px ;
-
-            .forminput {
-
-                width: 100% ;
+                width: 50%;
+                margin: 0.5em;
 
             }
 
-            .form__textarea {
-
-                min-height: 130px ;
-                resize: none ;
-                width: 100% ;
-
+            .text__area{
+                @extend .form__input;
+                resize: none;
             }
 
          }
-     }
 }
 
 input::-webkit-outer-spin-button,

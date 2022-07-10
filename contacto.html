@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <link rel="stylesheet" href="./assets/scss/style.css">
     <title>MEIR Medicina Estetica</title>
     
 </head>
@@ -66,36 +66,18 @@
 
             <form action="#" class="form" >
 
-                <div class="form__div" >
+                <label for="nombre">Nombre:</label>
 
-                    <input type="text" placeholder="Ingrese su nombre y apellido" class="form__input" >
+                <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido" class="form__input" >
 
-                </div>
-    
-                <div class="form__div" >
+                <input type="email" name="email" placeholder="Introduzca su email" id="email" required class="form__input" >
 
-                    <input type="email" name="email" placeholder="Introduzca su email" id="email" required class="form__input" >
+                <input type="number" name="number" placeholder="Introduzca su numero" class="form__input" >
 
-                </div>
-    
-                <div class="form__div" >
+                <textarea name="textarea" placeholder="Mensaje" class="text__area" cols="30" rows="10"></textarea>
 
-                    <input type="number" name="number" placeholder="Introduzca su numero" class="form__input" >
+                <input type="submit" value="Enviar" class="buton">
 
-                </div>
-    
-                <div class="form__div" >
-
-                    <textarea name="textarea" placeholder="Mensaje" class="form__textarea"></textarea>
-
-                </div>
-    
-                <div class="form__div" >
-
-                    <input type="submit" value="Enviar">
-
-                </div>
-    
             </form>
 
         </div>
