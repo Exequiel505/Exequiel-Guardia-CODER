@@ -104,7 +104,7 @@ h1 {
     height: 500px;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .logo {
     width: 150px;
     display: flex;
@@ -118,7 +118,7 @@ h1 {
     font-size: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .index__grid {
     grid-template-rows: 0.5fr 3.5fr 0.1fr;
     grid-template-areas: "nav            nav" "main__index    publicidad" "footer         footer";

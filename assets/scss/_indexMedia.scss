@@ -48,7 +48,7 @@ $breakpoints: (
 
 }
 
-@include(lg){
+@include breakpoint(lg){
 
     .logo{
 
@@ -75,7 +75,7 @@ $breakpoints: (
 
 }      
 
-@include(xl){
+@include breakpoint(xl){
 
     .index__grid {
      
