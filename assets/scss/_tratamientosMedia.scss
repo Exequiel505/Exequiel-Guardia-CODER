@@ -1,0 +1,46 @@
+$breakpoints: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin breakpoint($size) {
+
+    @if map-has-key($breakpoints, $size) {
+
+      @media (min-width: #{map-get($breakpoints, $size)}) {
+
+        @content;
+          }
+      }
+    }
+
+    @include breakpoint(lg){
+
+        .trat{
+
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+            margin-top: 90 150px;
+            .trat__div{
+
+                display: flex;
+                flex-wrap: nowrap;
+                margin: 75px 10px;
+         
+            }
+            p{
+                margin: 15px ;
+            }
+            img{
+
+                width: 150px;
+
+            }
+
+        }
+
+    }

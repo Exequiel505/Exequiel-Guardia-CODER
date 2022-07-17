@@ -19,22 +19,12 @@ $breakpoints: (
     }
 @include breakpoint(md){.index__grid {
 
-    grid-template-rows: 0.5fr 7fr .5fr .1fr;
+    grid-template-rows: 0.5fr 7fr .1fr;
     
 }
 
-.logo{
+.nav__bar ul li{
 
-    width: 120px;
-    display: flex;
-    border-radius: 50px;
-    overflow: hidden;
-
-}
-
-.nav ul li{
-
-    text-decoration: none;
     padding: 8px;
     font-size: 24px;
 
@@ -49,22 +39,12 @@ $breakpoints: (
 }
 
 @include breakpoint(lg){
-
-    .logo{
-
-        width: 150px;
-        display: flex;
-        border-radius: 20px;
-        overflow: none;
     
-    }
-    
-    .nav{ 
+    .nav__bar{ 
             ul{
             
                 li{
     
-                    text-decoration: none;
                     padding: 20px;
                     font-size: 26px;
                     
@@ -81,32 +61,8 @@ $breakpoints: (
      
         grid-template-rows: 0.5fr 3.5fr 0.1fr;
         grid-template-areas:"nav            nav"
-                            "main__index    publicidad" 
+                            "main__index    main__index" 
                             "footer         footer";  
-    }
-
-    .logo{
-
-        width: 150px;
-        padding: 16px;
-        display: flex;
-        border-radius: 50px
-    
-    }
-    
-    .nav {
-        
-        ul  { 
-        
-            li  {
-    
-                text-decoration: none;
-                padding: 30px;
-                font-size: 26px;
-
-            }
-        }        
-    
     }
     
     .main__index{
@@ -117,7 +73,6 @@ $breakpoints: (
         flex-wrap: wrap;
         align-items: center;
         grid-area: main__index;
-        background-color: darkgreen;
         font-size: 24px;
 
             iframe{
@@ -129,17 +84,10 @@ $breakpoints: (
     
     }
     
-    .publicidad__index{
-    
-        grid-area: publicidad;
-        background-color: $color__publi;
-    
-    }
-    
     .footer__index{
     
         grid-area: footer;
-        background-color: $color__footer;
+        background-color: rgb(233, 223, 223);
     
     } 
 }

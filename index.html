@@ -8,7 +8,9 @@
     <meta name="description" content="Medicina estetica regenerativa integral donde nos encargaremos de su salud externa, haciendo tratamientos de plasma rico en plaquetas, MELA y presoterapia para mas informacion click aqui.">
     <meta name="keywords" content="HTML , CSS, Medicina estetica, salud, rejuvenecimiento, PRP, MELA, Presoterapia, Mendoza, Argentina">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/scss/style.css">
     <title>MEIR Medicina Estetica</title>
 
@@ -16,80 +18,87 @@
 
 <body class="index__grid">
         
-    <nav class="nav">
+    <nav class="navbar navbar-expand-lg nav__bar">
 
-        <div class="logo">
+        <div class="container-fluid">
 
-            <img src="./assets/empresa.jpg" alt="logo">
-        
+          <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="Logo"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="./tratamientos.html">Tratamientos</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a>
+                
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="./reseñas.html">Reseñas</a>
+                
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+                
+              </li>
+
+            </ul>
+
+          </div>
+
         </div>
 
-        <ul>
-            <li>
+      </nav>
 
-                <a href="index.html">Inicio</a>
+    <main class="main__index">
 
-            </li>
-
-            <li>
-
-                <a href="tratamientos.html">Tratamientos</a>
-
-            </li>
-
-            <li>
-
-                <a href="sobreNosotros.html">Sobre Nosotros</a>
-
-            </li>
-
-            <li>
-
-                <a href="reseñas.html">Reseñas</a>
-
-            </li>
-
-            <li>
-
-                <a href="contacto.html">Contacto</a>
-
-            </li>
-        </ul>
-            
-    </nav>
-
-    <main class="main__index" data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine">
-
-        <h1>Medicina Estetica</h1>
+        <h1>Medicina Estetica Regenerativa</h1>
 
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia modi iure neque, quo blanditiis autem! Numquam ipsum porro sed voluptatibus? Esse corporis et commodi aut dolorum. Eveniet aut eaque animi magni ut, explicabo veritatis laborum, dolor sint eligendi odit accusamus et doloribus totam quaerat molestiae dolorem eius rerum tempora qui. Sed maxime facere minus eius a exercitationem eos! Reiciendis recusandae quas sunt laudantium cupiditate at hic ipsam sint neque voluptatum molestias voluptate voluptas officiis eveniet, aliquid nemo autem unde explicabo aperiam repudiandae, eaque, beatae dicta. Nam magni, deserunt nobis voluptatem animi quia sed nemo dolore numquam rem placeat vitae impedit velit maxime mollitia optio saepe tempora. Vero ducimus officiis, hic quibusdam dolor distinctio? Doloremque consectetur ullam ex earum iusto. Quis dignissimos labore quod ullam harum. Beatae dolor quibusdam, molestias quod sapiente animi? Aspernatur, nulla! Architecto amet cum, labore ut voluptatum officiis quis atque aliquam accusamus illo omnis eius vitae dolorem distinctio eum cumque aliquid, explicabo, deserunt similique vero quibusdam sapiente ea. Dolorum adipisci nesciunt dolore itaque. Beatae sequi atque cum ad nostrum animi dolor corrupti? Tempora culpa libero maxime deleniti quia, saepe at labore enim eos eum tenetur consectetur et voluptate blanditiis iure consequatur fugiat repudiandae expedita molestiae ipsa modi.
+            En MEIR nos centramos en la salud de su estetica haciendo que rejuvenezca mediante los tratamientos mas recientes descubiertos contamos con alta capacitacion a su disposicion para brindarle la mejor experiencia posibles. Aqui abajo dejamos un pequeño video introductorio para que se familiarice con lo que se puede llegar a encontrar.
         </p>
 
         <iframe width="729" height="410" src="https://www.youtube.com/embed/LWdNxGaI4Iw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
     </main>
 
-    <aside class="publicidad__index" data-aos="fade-left"
-    data-aos-anchor="#example-anchor"
-    data-aos-offset="500"
-    data-aos-duration="500">
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt id ea obcaecati ex enim eum sit, fuga ducimus nemo voluptatibus quas temporibus voluptas magni eius.</p>
-
-    </aside>
 
     <footer class="footer__index"> 
         
         <p> ©2022 MEIR Medicina estetica Todos los derechos reservados </p>
 
-        <a href="https://www.instagram.com/meir_medicinaestetica/?hl=en" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/meir_medicinaestetica/?hl=en" target="_blank" class="fa fa-instagram"></a>
         
-        <a href="https://www.facebook.com/medicinaesteticaintegralregenerativa" target="_blank">Facebook</a>
+        <a href="https://www.facebook.com/medicinaesteticaintegralregenerativa" target="_blank" class="fa fa-facebook-official"></a>
+
+        <a href="#" class="fa fa-whatsapp"></a>
 
    </footer>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 

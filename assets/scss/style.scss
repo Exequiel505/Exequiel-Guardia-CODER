@@ -1,9 +1,10 @@
-* html {
+html, body {
 
     font-family: 'Open Sans', sans-serif;
     font-weight: 1000;
-    width: 100%;
-    height: 100vh;
+    min-width: 100vw !important;
+    overflow-x: hidden !important;
+
 }
 
 h1{
@@ -19,6 +20,12 @@ h1{
 @import "index";
 
 @import "indexMedia";
+
+@import "tratamientos";
+
+@import "tratamientosMedia";
+
+@import "sobreNosotros";
 
 @import "contacto";
 

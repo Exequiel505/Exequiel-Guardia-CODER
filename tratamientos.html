@@ -6,57 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Medicina estetica regenerativa integral donde nos encargaremos de su salud externa, haciendo tratamientos de plasma rico en plaquetas, MELA y presoterapia para mas informacion click aqui.">
-    <meta name="keywords" content="HTML , CSS, Medicina estetica, salud, rejuvenecimiento, PRP, MELA, Presoterapia, Mendoza, Argentina">
+    <meta name="keywords" content=" Medicina estetica, salud, rejuvenecimiento, PRP, MELA, Presoterapia, Mendoza, Argentina">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/scss/style.css">
     <title>Tratamientos</title>
     
 </head>
 
 <body class="trat__grid">
 
-    <nav class="nav">
+    <nav class="navbar navbar-expand-lg nav__bar">
 
-        <div class="logo">
+        <div class="container-fluid">
 
-            <img src="./assets/logo.jpg" alt="logo">
-    
+          <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="Logo"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+
+                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link active" href="./tratamientos.html">Tratamientos</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a>
+                
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="./reseñas.html">Reseñas</a>
+                
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+                
+              </li>
+
+            </ul>
+
+          </div>
+
         </div>
 
-        <ul>
-            <li>
-
-                <a href="index.html">Inicio</a>
-
-            </li>
-
-            <li>
-
-                <a href="tratamientos.html">Tratamientos</a>
-
-            </li>
-
-            <li>
-
-                <a href="sobreNosotros.html">Sobre Nosotros</a>
-
-            </li>
-
-            <li>
-
-                <a href="reseñas.html">Reseñas</a>
-
-            </li>
-
-            <li>
-
-                <a href="contacto.html">Contacto</a>
-
-            </li>
-        </ul>
-
-    </nav>
+      </nav>
 
     <main class="main__grid">
 
@@ -70,7 +84,7 @@
 
                 <img src="./assets/PRP.jpg" alt="PRP" class="imgPrp">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora totam ullam molestiae minus laboriosam at nesciunt rerum eius architecto, quasi quos quas iusto dignissimos voluptatum! Placeat officiis eveniet eligendi. Quibusdam!</p>
+                <p> Es un derivado de la sangre cuando es centrifugada lo que estimula el colageno, elastina y tejido epidermico lo cual desemboca en una piel mas tersa, luminosa y de mejor calidad</p>
 
             </div>
                       
@@ -78,9 +92,9 @@
 
             <div class="trat__div">
 
-                <img src="https://mejorconsalud.as.com/fitness/wp-content/uploads/2021/10/presoterapia-768x512.jpg" alt="Presoterapia" class="imgPreso">
+                <img src="./assets/preso.jpg" alt="Presoterapia" class="imgPreso">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora totam ullam molestiae minus laboriosam at nesciunt rerum eius architecto, quasi quos quas iusto dignissimos voluptatum! Placeat officiis eveniet eligendi. Quibusdam!</p>
+                <p>La presoterapia colabora con la re absorción de los líquidos intersticiales, es una técnica de presión positiva utilizada para facilitar y mejorar el retorno venoso y linfático, lo que favorece la circulación sanguínea de todo el cuerpo. Estimula la reabsorción de edemas y toxinas retenidas. Aporta un efecto analgésico y relajante por la acción mecánica de la compresión sobre el cuerpo.</p>
 
             </div>
 
@@ -90,7 +104,7 @@
 
                 <img src="./assets/MELA.jpg" alt="MELA" class="imgMela">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora totam ullam molestiae minus laboriosam at nesciunt rerum eius architecto, quasi quos quas iusto dignissimos voluptatum! Placeat officiis eveniet eligendi. Quibusdam!</p>
+                <p>El tratamiento MELA (Mini Extracción Lipídica Ambulatoria) es una nueva técnica no quirúrgica para extraer grasa localizada de pequeñas zonas del cuerpo. Es un mecanismo menos invasivo que una intervención de liposucción para eliminar la grasa localizada.</p>
 
             </div>
 
@@ -102,11 +116,16 @@
         
         <p> ©2022 MEIR Medicina estetica Todos los derechos reservados </p>
 
-        <a href="https://www.instagram.com/meir_medicinaestetica/?hl=en" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/meir_medicinaestetica/?hl=en" target="_blank" class="fa fa-instagram"></a>
         
-        <a href="https://www.facebook.com/medicinaesteticaintegralregenerativa" target="_blank">Facebook</a>
+        <a href="https://www.facebook.com/medicinaesteticaintegralregenerativa" target="_blank" class="fa fa-facebook-official"></a>
+
+        <a href="#" class="fa fa-whatsapp"></a>
 
    </footer>
 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
+
 </html>

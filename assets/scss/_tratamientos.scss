@@ -1,0 +1,54 @@
+.trat__grid{
+
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: .1fr 10fr;
+    grid-template-rows: .1fr 12fr .1fr;
+    grid-template-areas:"nav        nav"
+                        "main__grid main__grid"
+                        "footer     footer";
+
+}
+
+.nav__bar{
+    background-color: $color__navBar;
+}
+
+.main__grid{
+
+    min-height: 100vh;
+    grid-area: main__grid;
+
+}
+
+.trat{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 90 15px;
+    .trat__div{
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: 14px;
+         
+    }
+    img{
+        width: 150px;
+    }
+
+}
+
+
+.footer__trat{
+
+    grid-area: footer;
+    background-color: $color__gris;
+    a{
+        padding:0 10%;
+        font-size: 140%;
+    }
+
+}
