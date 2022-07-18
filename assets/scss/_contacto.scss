@@ -1,8 +1,7 @@
 
 .container {
+
     width: 100%;
-    
-    background-color: #9D12AB ;
 
     .form {
 
@@ -15,8 +14,15 @@
 
             .form__input {
 
-                width: 50%;
+                border-radius: 5px;
+                width: 100%;
                 margin: 0.5em;
+            }
+
+            .buton{
+
+                border-radius: 5px;
+                width: 50% ;
 
             }
 
@@ -25,15 +31,13 @@
                 resize: none;
             }
 
-         }
+        }
 }
 
 input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
       -webkit-appearance: none;
   }
-
-
 
 .iframe{
 
