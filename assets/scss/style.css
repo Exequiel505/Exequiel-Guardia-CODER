@@ -210,6 +210,12 @@ img:nth-child(1) {
 .res__grid .main__res {
   grid-area: main;
 }
+.res__grid .main__res .slide {
+  margin: 5% 5%;
+}
+.res__grid .main__res .slide img {
+  height: 45vh;
+}
 .res__grid .footer__res {
   grid-area: footer;
   background-color: #ABA8A8;
