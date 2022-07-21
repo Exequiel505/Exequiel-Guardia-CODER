@@ -16,8 +16,20 @@ $breakpoints: (
           }
       }
     }
-@include breakpoint(md) {
+
+@include breakpoint(lg) {
+    
+    .slide{
+        margin: 250PX;
+        img{
+
+            height: 80vh;
+    
+        }
+    }    
+    
+    
+
+}
 
     
-    
-}

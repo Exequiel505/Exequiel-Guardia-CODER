@@ -225,6 +225,14 @@ img:nth-child(1) {
   font-size: 140%;
 }
 
+@media (min-width: 992px) {
+  .slide {
+    margin: 250PX;
+  }
+  .slide img {
+    height: 80vh;
+  }
+}
 .container {
   width: 100%;
 }
