@@ -8,35 +8,48 @@
     grid-template-areas:"nav            nav"        
                         "main__nos      main__nos"  
                         "footer__nos    footer__nos";
-
-}
-
-.nav{
+                        
+                        .nav__bar{
     
-    grid-area: nav;
+                            grid-area: nav;
+                        
+                        }
 
-}
+                        .main__nos {
 
-.main__nos {
+                            grid-area: main__nos;
 
-    grid-area: main__nos;
-
-}
-
-.flex__nos{
+                            .flex__nos{
     
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+                                display: flex;
+                                flex-direction: column;
+                                flex-wrap: wrap;
+                                .flex__nos__item{
+
+                                    margin: 10px;
+                                    padding: 10px;
+                                
+                                }
+                                
+                            }
+                        
+                        }
+
+                        .footer__nos{
     
+                            grid-area: footer__nos;
+                            background-color: $color__gris;
+                            a{
+                                padding:0 10%;
+                                font-size: 140%;
+                            }
+                        
+                        }
+
 }
 
-.flex__nos__item{
 
-    margin: 10px;
-    padding: 10px;
 
-}
 
 img:nth-child(1){
 
@@ -67,13 +80,4 @@ img:nth-child(1){
 
 }
 
-.footer__nos{
-    
-    grid-area: footer__nos;
-    background-color: $color__gris;
-    a{
-        padding:0 10%;
-        font-size: 140%;
-    }
 
-}

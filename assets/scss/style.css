@@ -154,24 +154,28 @@ h1 {
   grid-template-rows: 0.1fr 3fr 0.1fr;
   grid-template-areas: "nav            nav" "main__nos      main__nos" "footer__nos    footer__nos";
 }
-
-.nav {
+.nos__grid .nav__bar {
   grid-area: nav;
 }
-
-.main__nos {
+.nos__grid .main__nos {
   grid-area: main__nos;
 }
-
-.flex__nos {
+.nos__grid .main__nos .flex__nos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-.flex__nos__item {
+.nos__grid .main__nos .flex__nos .flex__nos__item {
   margin: 10px;
   padding: 10px;
+}
+.nos__grid .footer__nos {
+  grid-area: footer__nos;
+  background-color: #ABA8A8;
+}
+.nos__grid .footer__nos a {
+  padding: 0 10%;
+  font-size: 140%;
 }
 
 img:nth-child(1) {
@@ -195,11 +199,25 @@ img:nth-child(1) {
   font-size: 16px;
 }
 
-.footer__nos {
-  grid-area: footer__nos;
+.res__grid {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 0.1fr 3fr 0.1fr;
+  grid-template-areas: "nav     nav" "main    main" "footer  footer";
+}
+.res__grid .nav__bar {
+  grid-area: nav;
+}
+.res__grid .main__res {
+  grid-area: main;
+}
+.res__grid .footer__res {
+  grid-area: footer;
   background-color: #ABA8A8;
 }
-.footer__nos a {
+.res__grid .footer__res a {
   padding: 0 10%;
   font-size: 140%;
 }

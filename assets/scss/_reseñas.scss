@@ -1,15 +1,43 @@
+.res__grid{
 
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: .1fr 3fr .1fr;
+    grid-template-areas:"nav     nav" 
+                        
+                        "main    main"
+                        
+                        "footer  footer";
 
+                        .nav__bar{
 
+                            grid-area: nav
+                        }
 
+                        .main__res{
+                            
+                            grid-area: main;
 
+                        }
 
-.footer__res{
-    
-    background-color: $color__gris;
-    a{
-        padding:0 10%;
-        font-size: 140%;
-    }
+                        .footer__res{
+
+                            grid-area: footer;
+                            background-color: $color__gris;
+                            a{
+                                padding:0 10%;
+                                font-size: 140%;
+                            }
+                        
+                        }
 
 }
+
+
+
+
+
+
+
