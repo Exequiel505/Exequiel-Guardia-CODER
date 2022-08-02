@@ -290,7 +290,7 @@ img:nth-child(1) {
   margin-top: 1%;
 }
 .res__grid .main__res .slide {
-  margin: 5% 5%;
+  margin: 5% 0.5%;
 }
 .res__grid .main__res .slide img {
   height: 45vh;
@@ -299,17 +299,33 @@ img:nth-child(1) {
   grid-area: footer;
   background-color: #ABA8A8;
 }
+.res__grid .footer__res p {
+  margin: 1.5%;
+}
 .res__grid .footer__res a {
   padding: 0 10%;
+  margin: 1.5%;
   font-size: 140%;
 }
 
+@media (min-width: 768px) {
+  .slide {
+    width: 100%;
+    padding: 0 15% 0 15%;
+  }
+}
 @media (min-width: 992px) {
   .slide {
     margin: 250PX;
   }
   .slide img {
     height: 80vh;
+  }
+}
+@media (min-width: 1200px) {
+  .slide {
+    width: 50%;
+    padding: 0 30% 0 30%;
   }
 }
 .main {
