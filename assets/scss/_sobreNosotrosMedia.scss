@@ -1,0 +1,40 @@
+$breakpoints: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin breakpoint($size) {
+
+    @if map-has-key($breakpoints, $size) {
+
+      @media (min-width: #{map-get($breakpoints, $size)}) {
+
+        @content;
+          }
+      }
+    }
+
+@include breakpoint(lg) {
+    
+    .footer__nos{
+    
+        grid-area: footer__nos;
+        background-color: $color__gris;
+        
+        p{
+            margin: .5%;
+        }
+        a{
+            margin: .5%;
+        }
+
+        }
+    }
+    
+    
+    
+
+

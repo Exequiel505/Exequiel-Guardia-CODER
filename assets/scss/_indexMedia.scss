@@ -36,6 +36,13 @@ $breakpoints: (
 
 }
 
+.footer__index{
+
+    a{
+        margin: 1%;
+    }
+}
+
 }
 
 @include breakpoint(lg){
@@ -52,8 +59,16 @@ $breakpoints: (
             }
     
         }
+    .footer__index{
 
-}      
+        a{
+            padding: 0 3%;
+        } 
+
+    }
+       
+} 
+
 
 @include breakpoint(xl){
 
@@ -87,7 +102,14 @@ $breakpoints: (
     .footer__index{
     
         grid-area: footer;
-        background-color: rgb(233, 223, 223);
-    
+        background-color: $color__gris;
+
+        p{
+            margin: .5%;
+        }
+        a{
+            margin: .5%;
+        }
+
     } 
 }

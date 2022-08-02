@@ -28,6 +28,9 @@ h1 {
   grid-area: main__index;
   padding: 10px;
 }
+.main__index h1 {
+  margin-top: 1%;
+}
 .main__index iframe {
   margin-top: 75px;
   width: 100%;
@@ -39,8 +42,12 @@ h1 {
   grid-area: footer;
   background-color: #ABA8A8;
 }
+.footer__index p {
+  margin: 1.5%;
+}
 .footer__index a {
   padding: 0 10%;
+  margin: 1.5%;
   font-size: 140%;
 }
 
@@ -55,11 +62,17 @@ h1 {
   .main__index iframe {
     height: 500px;
   }
+  .footer__index a {
+    margin: 1%;
+  }
 }
 @media (min-width: 992px) {
   .nav__bar ul li {
     padding: 20px;
     font-size: 26px;
+  }
+  .footer__index a {
+    padding: 0 3%;
   }
 }
 @media (min-width: 1200px) {
@@ -82,7 +95,13 @@ h1 {
   }
   .footer__index {
     grid-area: footer;
-    background-color: rgb(233, 223, 223);
+    background-color: #ABA8A8;
+  }
+  .footer__index p {
+    margin: 0.5%;
+  }
+  .footer__index a {
+    margin: 0.5%;
   }
 }
 .trat__grid {
@@ -101,18 +120,25 @@ h1 {
 .main__grid {
   min-height: 100vh;
   grid-area: main__grid;
+  padding: 10px;
+}
+.main__grid h1 {
+  margin-top: 1%;
 }
 
 .trat {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
-  margin-top: 90 15px;
+  padding: 10px;
+  margin: 10px 15px;
 }
 .trat .trat__div {
   display: flex;
   flex-wrap: wrap;
   margin: 14px;
+}
+.trat .trat__div img {
+  padding: 5px;
 }
 .trat img {
   width: 150px;
@@ -122,8 +148,12 @@ h1 {
   grid-area: footer;
   background-color: #ABA8A8;
 }
+.footer__trat p {
+  margin: 1.5%;
+}
 .footer__trat a {
   padding: 0 10%;
+  margin: 1.5%;
   font-size: 140%;
 }
 
@@ -132,18 +162,43 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-    margin-top: 90 150px;
+    margin-top: 150px 50px;
   }
   .trat .trat__div {
     display: flex;
     flex-wrap: nowrap;
-    margin: 75px 10px;
+    margin: 100px 10px;
   }
   .trat p {
-    margin: 15px;
+    margin: 20px;
   }
   .trat img {
     width: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .trat {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 150px 50px;
+  }
+  .trat .trat__div {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 100px 10px;
+  }
+  .trat p {
+    margin: 20px;
+  }
+  .trat img {
+    width: 150px;
+  }
+  .footer__trat p {
+    margin: 0.5%;
+  }
+  .footer__trat a {
+    margin: 0.5%;
   }
 }
 .nos__grid {
@@ -159,6 +214,10 @@ h1 {
 }
 .nos__grid .main__nos {
   grid-area: main__nos;
+  padding: 10px;
+}
+.nos__grid .main__nos h1 {
+  margin-top: 1%;
 }
 .nos__grid .main__nos .flex__nos {
   display: flex;
@@ -186,8 +245,12 @@ h1 {
   grid-area: footer__nos;
   background-color: #ABA8A8;
 }
+.nos__grid .footer__nos p {
+  margin: 1.5%;
+}
 .nos__grid .footer__nos a {
   padding: 0 10%;
+  margin: 1.5%;
   font-size: 140%;
 }
 
@@ -196,6 +259,18 @@ img:nth-child(1) {
   margin: auto;
 }
 
+@media (min-width: 992px) {
+  .footer__nos {
+    grid-area: footer__nos;
+    background-color: #ABA8A8;
+  }
+  .footer__nos p {
+    margin: 0.5%;
+  }
+  .footer__nos a {
+    margin: 0.5%;
+  }
+}
 .res__grid {
   min-height: 100vh;
   min-width: 100vw;
@@ -209,6 +284,10 @@ img:nth-child(1) {
 }
 .res__grid .main__res {
   grid-area: main;
+  padding: 10px;
+}
+.res__grid .main__res h1 {
+  margin-top: 1%;
 }
 .res__grid .main__res .slide {
   margin: 5% 5%;
@@ -233,6 +312,13 @@ img:nth-child(1) {
     height: 80vh;
   }
 }
+.main {
+  padding: 10px;
+}
+.main h1 {
+  margin-top: 1%;
+}
+
 .container {
   width: 100%;
 }
@@ -241,7 +327,7 @@ img:nth-child(1) {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 2em;
+  padding: 1.5em;
 }
 .container .form .form__input, .container .form .text__area {
   border-radius: 5px;

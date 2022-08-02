@@ -24,16 +24,16 @@ $breakpoints: (
             display: flex;
             flex-wrap: wrap;
             padding: 5px;
-            margin-top: 90 150px;
+            margin-top: 150px 50px;
             .trat__div{
 
                 display: flex;
                 flex-wrap: nowrap;
-                margin: 75px 10px;
+                margin: 100px 10px;
          
             }
             p{
-                margin: 15px ;
+                margin: 20px ;
             }
             img{
 
@@ -44,3 +44,41 @@ $breakpoints: (
         }
 
     }
+
+    @include breakpoint(xl){
+
+      .trat{
+
+          display: flex;
+          flex-wrap: wrap;
+          padding: 5px;
+          margin-top: 150px 50px;
+          .trat__div{
+
+              display: flex;
+              flex-wrap: nowrap;
+              margin: 100px 10px;
+       
+          }
+          p{
+              margin: 20px ;
+          }
+          img{
+
+              width: 150px;
+
+          }
+
+      }
+      .footer__trat{
+        p{
+          margin: .5%;
+      }
+      a{
+          margin: .5%;
+      }
+      }
+
+  }
+
+ 
