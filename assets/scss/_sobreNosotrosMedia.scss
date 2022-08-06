@@ -17,22 +17,37 @@ $breakpoints: (
       }
     }
 
-@include breakpoint(lg) {
+
+@include breakpoint(lg){
     
     .footer__nos{
-    
-        grid-area: footer__nos;
-        background-color: $color__gris;
-        
-        p{
-            margin: .5%;
-        }
-        a{
-            margin: .5%;
-        }
 
-        }
+        a{
+            padding: 0 3%;
+        } 
+
     }
+       
+} 
+
+
+@include breakpoint(xl){
+
+    
+  .footer__nos{
+    
+    grid-area: footer__nos;
+    background-color: $color__gris;
+
+    p{
+      margin: .5%;
+    }
+    a{
+      margin: .5%;
+    }
+
+  } 
+}
     
     
     

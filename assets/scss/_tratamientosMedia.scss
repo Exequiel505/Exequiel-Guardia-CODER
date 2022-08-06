@@ -43,6 +43,13 @@ $breakpoints: (
 
         }
 
+        .footer__trat{
+
+            a{
+                padding: 0 3%;
+            } 
+        }
+
     }
 
     @include breakpoint(xl){
@@ -70,15 +77,17 @@ $breakpoints: (
           }
 
       }
+
       .footer__trat{
+
         p{
-          margin: .5%;
-      }
+            margin: .5%;
+        }
+
       a{
-          margin: .5%;
-      }
-      }
+        margin: .5%;
+        }
 
-  }
 
- 
+    }
+}
