@@ -15,13 +15,68 @@ $breakpoints: (
         @content;
           }
       }
-    }    
+    }
+
+@include breakpoint(sm) {
+    
+  .res__grid{
+    
+    .main__res{
+                                    
+      .slide{
+    
+        width: 100%;
+        margin-top: 1%;       
+          img{
+                      
+              height: 60vh;
+        
+          }
+      }
+        
+    }
+  }
+}    
+
+@include breakpoint(md) {
+    
+  .res__grid{
+
+    .main__res{
+                                
+      .slide{
+
+        width: 100%;
+        margin-top: 1%;       
+          img{
+                  
+              height: 60vh;
+    
+          }
+      }
+    
+    }
+  }
+}        
 
 @include breakpoint(lg) {
     
   .res__grid{
+    .main__res{
+                            
+      .slide{
+        
+        margin-top: 1%;       
+          img{
+              
+              height: 55vh;
 
-      .footer__res{
+          }
+      }
+
+  }
+
+  .footer__res{
         a{
           padding: 0 3%;
       } 
@@ -33,14 +88,29 @@ $breakpoints: (
     
   .res__grid{
 
-      .footer__res{
-        p{
-          margin: .5%;
-        }
-        a{
-          margin: .5%;
-        }
+    .main__res{
+                            
+      .slide{
+
+        margin-top: 3%;
+
+          img{
+              
+              height: 60vh;
+
+          }
       }
+
+  }
+  
+  .footer__res{
+    p{
+      margin: .5%;
+    }
+    a{
+      margin: .5%;
+    }
+  }
   }
 }
 
