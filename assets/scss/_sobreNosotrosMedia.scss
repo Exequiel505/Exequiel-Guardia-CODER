@@ -19,20 +19,23 @@ $breakpoints: (
 
 
 @include breakpoint(lg){
-    
-    .footer__nos{
+    .nos__grid{
+
+      .footer__nos{
 
         a{
             padding: 0 3%;
         } 
 
     }
+    }
+    
        
 } 
 
 
 @include breakpoint(xl){
-
+.nos__grid{
     
   .footer__nos{
     
@@ -48,7 +51,7 @@ $breakpoints: (
 
   } 
 }
-    
+}    
     
     
 

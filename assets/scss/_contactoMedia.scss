@@ -19,21 +19,23 @@ $breakpoints: (
 
 @include breakpoint(lg) {
     
-  .res__grid{
-
-      .footer__res{
+      .footer__contact{
         a{
           padding: 0 3%;
-      } 
+        } 
       }
   }
-}
+
 
 @include breakpoint(xl) {
-    
-  .res__grid{
 
-      .footer__res{
+    .container {
+
+        width: 50%;
+    }
+
+    .footer__contact{
+    
         p{
           margin: .5%;
         }
@@ -41,7 +43,4 @@ $breakpoints: (
           margin: .5%;
         }
       }
-  }
 }
-
-    

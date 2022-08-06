@@ -55,8 +55,12 @@ input::-webkit-outer-spin-button,
 .footer__contact{
     
     background-color: $color__gris;
+    p{
+        margin: 1.5%;
+    }
     a{
         padding:0 10%;
+        margin: 1.5%;
         font-size: 140%;
     }
 
